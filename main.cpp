@@ -10,8 +10,8 @@ int main() {
     std::cout << "Box 2 Width: " << box2.getWidth() << std::endl;
     std::cout << "Box 2 Area: " << box2.getArea() << std::endl;
     box.setLength(-5.0);
-    std::cout << box.getLength() << std::endl;
+    std::cout << "After negative length test:" << box.getLength() << std::endl;
     box.setWidth(-3.0);
-    std::cout << box.getWidth() << std::endl;
+    std::cout << "After negative width test:" << box.getWidth() << std::endl;
     return 0;
 }
