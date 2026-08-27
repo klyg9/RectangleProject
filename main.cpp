@@ -1,18 +1,17 @@
 #include <iostream>
-
-// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-
+#include "Rectangle.h"
 int main() {
-    // TIP Press <shortcut actionId="RenameElement"/> when your caret is at the <b>lang</b> variable name to see how CLion can help you rename it.
-
-    const auto lang = "C++";
-    std::cout << "Hello and welcome to " << lang << "!\n";
-
-    for (int i = 1; i <= 5; i++) {
-        // TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        std::cout << "i = " << i << std::endl;
-    }
-
+    Rectangle box(5.0, 3.0);
+    std::cout << "Box 1 Length: " << box.getLength() << std::endl;
+    std::cout << "Box 1 Width: " << box.getWidth() << std::endl;
+    std::cout << "Box 1 Area: " << box.getArea() << std::endl;
+    Rectangle box2(8.0, 4.0);
+    std::cout << "Box 2 Length: " << box2.getLength() << std::endl;
+    std::cout << "Box 2 Width: " << box2.getWidth() << std::endl;
+    std::cout << "Box 2 Area: " << box2.getArea() << std::endl;
+    box.setLength(-5.0);
+    std::cout << box.getLength() << std::endl;
+    box.setWidth(-3.0);
+    std::cout << box.getWidth() << std::endl;
     return 0;
-    // TIP See CLion help at <a href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>. Also, you can try interactive lessons for CLion by selecting 'Help | Learn IDE Features' from the main menu.
 }

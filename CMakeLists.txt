@@ -3,4 +3,6 @@ project(RectangleProject_)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(RectangleProject_ main.cpp)
+add_executable(RectangleProject_ main.cpp
+        Rectangle.cpp
+        Rectangle.h)
